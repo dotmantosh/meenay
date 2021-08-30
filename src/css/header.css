@@ -28,6 +28,7 @@
 
 .user_img{
     width: 7rem;
+    cursor: pointer;
 }
 
 .user-info__name{
@@ -40,10 +41,12 @@
     color: #fff;
     font-size: 1.4rem;
     margin-left: 8px;
+    cursor: pointer;
 }
 .user_icon{
     width: 1.4rem;
     height: 1rem;
+    cursor: pointer;
 }
 
 .header__middle{
@@ -62,6 +65,7 @@
 
 .header__icons{
     width: 3.5rem;
+    cursor: pointer;
 }
 
 .notification_icon_msg{
@@ -129,4 +133,8 @@
 }
 .search_icon{
     z-index: 4;
+}
+
+.logo-div{
+    cursor: pointer;
 }

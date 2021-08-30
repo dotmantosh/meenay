@@ -21,6 +21,7 @@
     width: 3rem;
     margin-right: 1rem;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .listings_info{
@@ -30,6 +31,7 @@
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--color-primary-dark);
+    cursor: pointer;
 }
 
 .listings p{
@@ -49,6 +51,7 @@
     position: absolute;
     top: 2px;
     right: 2px;
+    cursor: pointer;
 }
 
 .progress_bar_in{

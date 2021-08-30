@@ -13,11 +13,13 @@
 }
 
 .suggested__page__img{
-    height: 3.5rem;    
+    height: 3.5rem;
+    cursor: pointer;
 }
 
 .suggested__page__info h3{
     font-size: 1.4rem;
+    cursor: pointer;
 }
 .suggested__page__info p{
     font-family: 'Roboto';
@@ -32,8 +34,10 @@
     border: none;
     outline: none;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .suggested__page__save__icon{
     width: 1.5rem;
+    cursor: pointer;
 }

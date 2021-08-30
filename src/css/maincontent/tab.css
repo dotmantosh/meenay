@@ -11,12 +11,14 @@
     padding: 0 2.3rem;
     padding-bottom: 10px;
     transform: translateY(5px);
+    cursor: pointer;
 }
 
 .tab_items_sm{
     font-size: 1.3rem;
     transform: translateY(4px);
     padding-bottom: .8rem;
+    cursor: pointer;
 }
 .tab-active{
     border-bottom: 5px solid #490057;

@@ -34,12 +34,14 @@
     width: 4rem;
     object-fit: cover;
     margin-right: 1.5rem;
+    cursor: pointer;
 }
 
 .post__content__userinfo--item h3{
     font-weight: 600;
     font-size: 1.5rem;
     color: var(--color-primary-dark);
+    cursor: pointer;
 }
 
 .post__content__userinfo--item__buttom{
@@ -68,6 +70,7 @@
     font-size: .8rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .view__comment__userinfo{
@@ -79,12 +82,14 @@
     height: 2.5rem;
     object-fit: cover;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .view__comments h4{
     font-size: 1.4rem;
     color: var(--color-primary-dark);
     font-weight: 600;
+    cursor: pointer;
 }
 
 .view__comments p{
@@ -96,10 +101,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem;
+    
 }
 
 .comment__actions img{
     height: 2rem;
+    cursor: pointer;
     
 }
 

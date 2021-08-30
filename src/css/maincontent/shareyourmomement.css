@@ -32,6 +32,7 @@
     border: none;
     outline: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .share_ur_tots__buttom{
@@ -42,6 +43,7 @@
     margin-right: 2rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .share_ur_tots__icon{

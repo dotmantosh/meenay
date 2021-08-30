@@ -30,6 +30,7 @@ align-items: flex-start;
 .user-info__info img{
     width: 10rem;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .user-info__detail{
@@ -41,6 +42,7 @@ flex-basis: 80%;
 .user-info__detail h2{
     font-size: 2.3rem;
     font-weight: 700;
+    cursor: pointer;
 }
 .user-info__detail h4{
 color: var(--color-grey-paragraph);
@@ -86,6 +88,7 @@ font-weight: 600;
     font-size: 1rem;
     padding: 0.5rem 2rem;
     text-align: center;
+    cursor: pointer;
 }
 
 .other_pages{
@@ -94,5 +97,6 @@ font-weight: 600;
     margin-bottom: .5rem;
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
