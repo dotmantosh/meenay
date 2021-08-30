@@ -1,0 +1,132 @@
+.header{
+    background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary));
+    height: 18rem;
+    border-radius: 0 0 30px 30px;
+}
+
+@media only screen and (max-width: 75em) {
+    .header {
+      padding: 1rem 4rem;
+      border-radius: 0;
+    }
+  }
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    flex-wrap: wrap;
+}
+
+
+.header__left{
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+}
+
+.user_img{
+    width: 7rem;
+}
+
+.user-info__name{
+    display: flex;
+    margin-left: 14px;
+    align-items: center;
+}
+
+.user-info__name p{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-left: 8px;
+}
+.user_icon{
+    width: 1.4rem;
+    height: 1rem;
+}
+
+.header__middle{
+    display: flex;
+    margin-right: 1rem;
+    flex-basis: 30%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header__middle >  div{
+    display: inline-block;
+    margin-right: 20px;
+    width: 3.5rem;
+    position: relative;
+}
+
+.header__icons{
+    width: 3.5rem;
+}
+
+.notification_icon_msg{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -2px;
+    right: -6px;
+    background-color: var(--color-secondary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-family: Roboto;
+}
+
+.search-bar-container{
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 47.75em) {
+    .search-bar-container {
+      order: 1;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+
+.search-input{
+    width: 90%;
+    border-radius: 13px;
+    padding-left: 45px;
+    border: none;
+    outline: none;
+    height: 55px;
+    background-color: var(--color-primary-dark);
+    transition: .2s all;
+    margin-left: -3.5rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 47.75em) {
+    .search-input {
+      width: 95%;
+      height: 40px;
+    }
+  }
+
+.search-input:focus{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.search-input::-webkit-input-placeholder{
+    color: #fff;
+    font-weight: 500;
+    opacity: .8;
+}
+.search_icon{
+    z-index: 4;
+}

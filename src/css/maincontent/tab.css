@@ -1,0 +1,29 @@
+.tab{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #48005783
+}
+
+.tab_items{
+    color: #9b9b9b;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0 2.3rem;
+    padding-bottom: 10px;
+    transform: translateY(5px);
+}
+
+.tab_items_sm{
+    font-size: 1.3rem;
+    transform: translateY(4px);
+    padding-bottom: .8rem;
+}
+.tab-active{
+    border-bottom: 5px solid #490057;
+    font-weight: 600;
+    color: var(--color-primary-dark);
+}
+.tab-active_sm{
+    border-bottom: 3px solid #490057;
+    font-weight: 600;
+}
