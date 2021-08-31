@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import PostPic from '../../../assets/img/highres-488961989-1@1x.png'
 import PostProfilePic from '../../../assets/img/ellipse-32-1@1x.png'
@@ -16,6 +16,11 @@ import DeleteIcon from '../../../assets/icons/icon-material-delete-sweep@1x.png'
 import { div } from 'prelude-ls'
 
 function Posts() {
+  const [isMenuIconClicked, setIsMenuIconClicked] = useState(true)
+
+  const toggleMenuIconState =()=>{
+    setIsMenuIconClicked(!isMenuIconClicked)
+  }
   return (
     <div>
 
@@ -73,10 +78,10 @@ function Posts() {
         </div>
 
         <div className="menu_icon">
-				  <i className="fa fa-ellipsis-h"></i>
+				  <i onClick={toggleMenuIconState} className="fa fa-ellipsis-h"></i>
 			  </div>
         
-        <div className="menu_options menu_options_post">
+        <div style={{display: isMenuIconClicked ? 'block' : 'none'}} className="menu_options menu_options_post">
           <div className="menu_option__item">
             <img src={HideIcon} alt="icon"/>
             <p>Hide</p>

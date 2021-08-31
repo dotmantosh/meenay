@@ -35,6 +35,11 @@
     outline: none;
     border-radius: 15px;
     cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.suggested__pages__content button:active{
+    transform: translateY(2px);
 }
 
 .suggested__page__save__icon{

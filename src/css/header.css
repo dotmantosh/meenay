@@ -66,6 +66,11 @@
 .header__icons{
     width: 3.5rem;
     cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.header__icons:active{
+    transform: translateY(3px);
 }
 
 .notification_icon_msg{
@@ -82,6 +87,7 @@
     align-items: center;
     font-size: .8rem;
     font-family: Roboto;
+    z-index: 4;
 }
 
 .search-bar-container{
@@ -137,4 +143,9 @@
 
 .logo-div{
     cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.logo-div:active{
+    transform: translateY(3px);
 }

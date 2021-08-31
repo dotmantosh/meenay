@@ -6,6 +6,12 @@
     padding-right: 12px;
 }
 
+@media only screen and (max-width: 43.75em) {
+    .switch__account{
+        display: none;
+    }
+  }
+
 .switch__account h3{
     color: var(--color-primary-dark);
     text-align: center;
@@ -90,6 +96,10 @@
     color: #fff;
     padding: 1.2rem;
     cursor: pointer;
+    transition: all .2s ease-out;
+}
+.side-nav__item:hover .side-nav__icon{
+    color: var(--color-secondary);
 }
 
 .side-nav__icon{
@@ -101,6 +111,22 @@
 .side-nav__item p{
     font-size: 1.8rem;
 }
+.side-nav__item:hover .side-nav__item p{
+    color: var(--color-secondary);
+}
+.menu__button{
+    display: none;
+    font-size: 20px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    color: var(--color-primary-dark);
+}
+@media only screen and (max-width: 43.75em) {
+    .menu__button{
+        display: block;
+    }
+  }
+
 
 /* my page */
 
@@ -134,6 +160,11 @@
     padding: 2px 5px;
     font-size: 1rem;
     cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.create-new__btn:active{
+    transform: translateY(3px);
 }
 
 .create-new__btn i{

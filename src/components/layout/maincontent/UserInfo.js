@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import CopyLinkIcon from '../../../assets/icons/path-205@1x.png'
 import ReportIcon from '../../../assets/icons/icon-material-report@1x.png'
 
 import UserPhoto from '../../../assets/img/ellipse-267@1x.png'
 function UserInfo() {
+	const [isMenuIconClicked, setIsMenuIconClicked] = useState(true)
+
+	const toggleMenuIconState =()=>{
+		setIsMenuIconClicked(!isMenuIconClicked)
+	}
+
 	return (
 		<div className="user-info">
 
@@ -49,9 +55,9 @@ function UserInfo() {
 				</div>
 			</div>
 			<div className="menu_icon">
-				<i className="fa fa-ellipsis-h"></i>
+				<i onClick={toggleMenuIconState} className="fa fa-ellipsis-h"></i>
 			</div>
-			<div className="menu_options">
+			<div style={{display: isMenuIconClicked ? 'block' : 'none'}} className="menu_options">
 				<div className="menu_option__item border_btm">
 					<img src={CopyLinkIcon} alt="icon"/>
 					<p>Copy Link</p>

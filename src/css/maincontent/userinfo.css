@@ -89,6 +89,11 @@ font-weight: 600;
     padding: 0.5rem 2rem;
     text-align: center;
     cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.user-info__stats button:active{
+    transform: translateY(2px);
 }
 
 .other_pages{

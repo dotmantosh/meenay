@@ -1,15 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-function Tab() {
+function Tab({setKey}) {
+	const [component, setComponent]= useState('mypage')
+
+	const setComponentToMount = (value)=>{
+		setComponent(value)
+		setKey(value)
+	}
 	return (
 		<div className="tab">
-			<div className="tab_items">
+			<div onClick={()=>setComponentToMount('community')} className={`tab_items ${component === 'community' ?  'tab-active' : '' }`}>
 				Community
 			</div>
-			<div className="tab_items">
+			<div onClick={()=>setComponentToMount('trending')} className={`tab_items ${component === 'trending' ?  'tab-active' : '' }`}>
 				See What's Trending
 			</div>
-			<div className="tab_items tab-active">
+			<div onClick={()=>setComponentToMount('mypage')} className={`tab_items ${component === 'mypage' ?  'tab-active' : '' }`}>
 				My Page
 			</div>
 		</div>
