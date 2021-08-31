@@ -98,9 +98,7 @@
     cursor: pointer;
     transition: all .2s ease-out;
 }
-.side-nav__item:hover .side-nav__icon{
-    color: var(--color-secondary);
-}
+
 
 .side-nav__icon{
     width: 1.8rem;
@@ -111,7 +109,7 @@
 .side-nav__item p{
     font-size: 1.8rem;
 }
-.side-nav__item:hover .side-nav__item p{
+.side-nav__item:hover {
     color: var(--color-secondary);
 }
 .menu__button{
