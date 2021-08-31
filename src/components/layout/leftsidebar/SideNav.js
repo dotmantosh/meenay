@@ -5,7 +5,7 @@ import SettingsIcon from '../../../assets/icons/path-110@1x.png'
 import SavedIcon from '../../../assets/icons/path-112@1x.png'
 import {Collapse} from 'react-bootstrap'
 function SideNav() {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(true)
     return (
 
       <div>

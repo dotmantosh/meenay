@@ -1,10 +1,7 @@
 .tab{
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #48005783;
-    font-size: 1.7rem;
-    color: #9b9b9b;
-    font-weight: 500;
+    border-bottom: 2px solid #48005783
 }
 
 .tab_items{
