@@ -13,7 +13,7 @@
     .landing_layout {
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
+      
     }
   }
 
@@ -36,6 +36,14 @@ flex-basis: 18%;
 
 .right{
     flex-basis: 20%;
+}
+
+@media only screen and (max-width: 43.75em) {
+	.left {
+		width: 90%;
+    flex-basis: 90%;
+		margin: 0 auto;
+	}
 }
 
 
